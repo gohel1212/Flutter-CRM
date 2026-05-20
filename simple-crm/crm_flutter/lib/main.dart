@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web_plugins/url_strategy.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import 'providers/auth_provider.dart';
@@ -9,6 +10,7 @@ import 'screens/contact_screen.dart';
 import 'screens/customer_screen.dart';
 
 void main() {
+  usePathUrlStrategy();
   runApp(const MyApp());
 }
 
